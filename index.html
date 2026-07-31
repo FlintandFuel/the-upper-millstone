@@ -126,7 +126,7 @@
         "name": "Do you host live music?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Occasional live music sessions happen at The Upper Millstone. Blues and jazz are woven into the identity of the place. Join the email list to be first in the know when sessions are announced."
+          "text": "Occasional live music sessions happen at The Upper Millstone. Blues and jazz are woven into the identity of the place. Follow on Facebook to be first in the know when sessions are announced."
         }
       },
       {
@@ -166,7 +166,7 @@
         "name": "How do I hear about music nights, specials, or events?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Join the email list. That's where first notice of live music nights, limited specials, and small local events goes — before anything is posted publicly or sells out."
+          "text": "Follow on Facebook. That's where first notice of live music nights, limited specials, and small local events goes — before anything is posted publicly or sells out."
         }
       },
       {
@@ -814,9 +814,6 @@
     }
 
     /* ================================================================
-       REVIEWS
-    ================================================================ */
-    /* ================================================================
        TAKE SOME HOME — RUSKS, BISCOTTI & COOKIES
     ================================================================ */
     #takeaway { background: var(--bg-2); border-top: 1px solid var(--border); }
@@ -842,6 +839,9 @@
     }
     .takeaway-photo:hover img { transform: scale(1.05); }
 
+    /* ================================================================
+       REVIEWS
+    ================================================================ */
     #reviews { background: var(--bg-2); border-top: 1px solid var(--border); }
     .reviews-hd { text-align: center; margin-bottom: 56px; }
     .reviews-grid {
@@ -885,102 +885,7 @@
     .r-name { font-size: 0.78rem; font-weight: 600; color: var(--cream); }
     .r-label { font-size: 0.68rem; color: var(--text-2); }
 
-    /* ================================================================
-       EMAIL CAPTURE
-    ================================================================ */
-    #join { background: var(--bg); border-top: 1px solid var(--border); position: relative; overflow: hidden; }
-    #join::before {
-      content: '';
-      position: absolute;
-      top: -80px; right: -80px;
-      width: 480px; height: 480px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(47,120,138,0.045) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .join-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      position: relative;
-    }
-    @media (max-width: 900px) { .join-inner { grid-template-columns: 1fr; gap: 48px; } }
-
-    .join-perks { display: flex; flex-direction: column; gap: 11px; margin-top: 26px; }
-    .join-perk {
-      display: flex;
-      align-items: flex-start;
-      gap: 11px;
-      font-size: 0.875rem;
-      color: var(--text-2);
-    }
-    .join-perk::before {
-      content: '';
-      width: 5px; height: 5px;
-      background: var(--orange);
-      border-radius: 50%;
-      flex-shrink: 0;
-      margin-top: 7px;
-    }
-
-    /* Form card */
-    .form-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--r-lg);
-      padding: 38px 34px;
-    }
-    .form-card-h {
-      font-family: var(--ff-serif);
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--cream);
-      margin-bottom: 6px;
-    }
-    .form-card-sub { font-size: 0.82rem; color: var(--text-2); margin-bottom: 26px; }
-    .form-group { margin-bottom: 14px; }
-    .form-group label {
-      display: block;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin-bottom: 7px;
-    }
-    .form-group input {
-      width: 100%;
-      background: var(--bg-lifted);
-      border: 1.5px solid var(--border-2);
-      border-radius: 7px;
-      padding: 13px 15px;
-      font-size: 0.94rem;
-      color: var(--cream);
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .form-group input:focus { border-color: var(--orange); }
-    .form-group input::placeholder { color: var(--text-3); }
-    .form-submit { width: 100%; margin-top: 4px; padding: 15px; font-size: 0.84rem; }
-    .form-privacy { text-align: center; font-size: 0.68rem; color: var(--text-3); margin-top: 12px; }
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: 28px 16px;
-    }
-    .form-success.vis { display: block; }
-    .success-icon { font-size: 2.2rem; margin-bottom: 10px; }
-    .form-success h3 {
-      font-family: var(--ff-serif);
-      font-size: 1.2rem;
-      color: var(--cream);
-      margin-bottom: 8px;
-    }
-    .form-success p { font-size: 0.875rem; color: var(--text-2); }
-
     @media (max-width: 600px) {
-      .form-card { padding: 26px 22px; }
       .hero-ctas { flex-direction: column; }
       .hero-ctas .btn { width: 100%; justify-content: center; }
     }
@@ -1073,7 +978,7 @@
       font-family: var(--ff-serif);
       font-style: italic;
       font-size: 0.95rem;
-      color: var(--text-2);
+      color: var(--text-1);
       line-height: 1.7;
     }
     .music-quote-card cite {
@@ -1283,6 +1188,20 @@
       margin-bottom: 14px;
     }
     .f-brand-desc { font-size: 0.84rem; color: var(--text-2); line-height: 1.65; max-width: 280px; }
+    .footer-social {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px; height: 38px;
+      margin-top: 16px;
+      background: var(--bg-lifted);
+      border: 1px solid var(--border-2);
+      border-radius: 8px;
+      color: var(--text-2);
+      transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .footer-social:hover { background: var(--orange); border-color: var(--orange); color: #fff; transform: translateY(-2px); }
+    .footer-social svg { width: 18px; height: 18px; fill: currentColor; display: block; }
     .f-col-title {
       font-size: 0.68rem;
       font-weight: 600;
@@ -1337,7 +1256,7 @@
   <a href="#music"      onclick="closeNav()">Music</a>
   <a href="#visit"      onclick="closeNav()">Find Us</a>
   <a href="#faq"        onclick="closeNav()">FAQ</a>
-  <a href="#join"       onclick="closeNav()" style="color:var(--orange)">Join the List</a>
+  <a href="https://www.facebook.com/Theuppermillstone" target="_blank" rel="noopener noreferrer" onclick="closeNav()" style="color:var(--orange)">Follow on Facebook</a>
 </nav>
 
 <!-- ============================================================
@@ -1357,7 +1276,7 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="#join" class="btn btn-primary">Join the List</a>
+        <a href="https://www.facebook.com/Theuppermillstone" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Follow on Facebook</a>
       </div>
       <button class="nav-burger" id="navBurger" aria-label="Open navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -1559,8 +1478,8 @@
 
       <article class="card fade-up d3">
         <div class="card-img-wrap">
-          <img src="sourdough.jpg"
-               alt="Artisan sourdough bread — The Upper Millstone" loading="lazy" />
+          <img src="sourdough-new.jpg"
+               alt="Freshly baked artisan sourdough loaves, hand-scored — The Upper Millstone" loading="lazy" />
         </div>
         <h3 class="card-title">Artisan Sourdough Bread</h3>
         <p class="card-body">
@@ -1707,35 +1626,35 @@
         <p class="menu-section-sub">On a bagel, sourdough or wrap</p>
 
         <div class="menu-item">
-          <span class="mi-name">Stormy Monday</span><span class="mi-price">R42</span>
+          <span class="mi-name">Stormy Monday</span><span class="mi-price">R54</span>
           <p class="mi-desc">Bacon, omelette, white cheddar &amp; tomato</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">The Crossroad</span><span class="mi-price">R42</span>
+          <span class="mi-name">The Crossroad</span><span class="mi-price">R54</span>
           <p class="mi-desc">Fried halloumi, grilled peppers, mushrooms &amp; tomato</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Little Wing</span><span class="mi-price">R32</span>
+          <span class="mi-name">Little Wing</span><span class="mi-price">R44</span>
           <p class="mi-desc">Egg, house-made mayonnaise &amp; peppadews</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Summertime</span><span class="mi-price">R36</span>
-          <p class="mi-desc">Cream cheese, avo, cucumber &amp; rocket</p>
+          <span class="mi-name">Summertime</span><span class="mi-price">R52</span>
+          <p class="mi-desc">Avo, cucumber, balsamic reduction &amp; rocket</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Red Rooster</span><span class="mi-price">R38</span>
+          <span class="mi-name">Red Rooster</span><span class="mi-price">R58</span>
           <p class="mi-desc">Roast chicken, sun-dried tomato pesto, aioli &amp; sesame seeds</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Workin' Man</span><span class="mi-price">R36</span>
+          <span class="mi-name">Workin' Man</span><span class="mi-price">R50</span>
           <p class="mi-desc">Bacon, lettuce &amp; tomato</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Prodigal Son</span><span class="mi-price">R32</span>
+          <span class="mi-name">Prodigal Son</span><span class="mi-price">R44</span>
           <p class="mi-desc">Ham, cheese &amp; tomato</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Deep River</span><span class="mi-price">R68</span>
+          <span class="mi-name">Deep River</span><span class="mi-price">R82</span>
           <p class="mi-desc">Drakensberg smoked trout, cream cheese, capers &amp; red onion</p>
         </div>
 
@@ -1743,9 +1662,18 @@
           <p class="menu-section-title">Health Bowl</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Ain't Misbehavin'</span><span class="mi-price">R45</span>
-          <p class="mi-desc">Roasted granola with stewed fruit &amp; yoghurt</p>
+          <span class="mi-name">Ain't Misbehavin'</span><span class="mi-price">R50</span>
+          <p class="mi-desc">Toasted granola with stewed fruit &amp; yoghurt</p>
         </div>
+
+        <div class="menu-section-gap">
+          <p class="menu-section-title">Extras</p>
+        </div>
+        <div class="menu-item"><span class="mi-name">Cream Cheese</span><span class="mi-price">R12</span></div>
+        <div class="menu-item"><span class="mi-name">Bagel</span><span class="mi-price">R10</span></div>
+        <div class="menu-item"><span class="mi-name">Avo</span><span class="mi-price">R16</span></div>
+        <div class="menu-item"><span class="mi-name">Bacon</span><span class="mi-price">R18</span></div>
+        <div class="menu-item"><span class="mi-name">Frozen Bagels (6)</span><span class="mi-price">R34</span></div>
 
         <p class="menu-note">Fresh baked goods come out of the oven every morning and aren't listed here. Ask at the counter — or just look at the shelf.</p>
       </div>
@@ -1753,49 +1681,52 @@
       <!-- Drinks column -->
       <div class="fade-up d2">
         <p class="menu-section-title">Coffee</p>
-        <div class="menu-item"><span class="mi-name">Espresso</span><span class="mi-price">R19</span></div>
-        <div class="menu-item"><span class="mi-name">Americano</span><span class="mi-price">R32</span></div>
+        <div class="menu-item"><span class="mi-name">Espresso</span><span class="mi-price">R24</span></div>
+        <div class="menu-item"><span class="mi-name">Americano</span><span class="mi-price">R26</span></div>
         <div class="menu-item">
-          <span class="mi-name">Cappuccino</span><span class="mi-price">R27 / R30</span>
+          <span class="mi-name">Cappuccino</span><span class="mi-price">R30 / R34</span>
         </div>
-        <div class="menu-item"><span class="mi-name">Flat White</span><span class="mi-price">R30</span></div>
-        <div class="menu-item"><span class="mi-name">Cortado</span><span class="mi-price">R27</span></div>
-        <div class="menu-item"><span class="mi-name">Latte</span><span class="mi-price">R30</span></div>
+        <div class="menu-item"><span class="mi-name">Flat White</span><span class="mi-price">R34</span></div>
+        <div class="menu-item"><span class="mi-name">Cortado</span><span class="mi-price">R30</span></div>
+        <div class="menu-item"><span class="mi-name">Latte</span><span class="mi-price">R34</span></div>
 
         <div class="menu-section-gap">
           <p class="menu-section-title">Alternative Brews</p>
         </div>
-        <div class="menu-item"><span class="mi-name">Aeropress</span><span class="mi-price">R35</span></div>
-        <div class="menu-item"><span class="mi-name">Hario Pour Over</span><span class="mi-price">R35</span></div>
+        <div class="menu-item"><span class="mi-name">Aeropress</span><span class="mi-price">R38</span></div>
+        <div class="menu-item"><span class="mi-name">Hario Pour Over</span><span class="mi-price">R43</span></div>
 
         <div class="menu-section-gap">
           <p class="menu-section-title">Specialty &amp; Cold</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Affogato</span><span class="mi-price">R39</span>
+          <span class="mi-name">Affogato</span><span class="mi-price">R45</span>
           <p class="mi-desc">2 scoops vanilla ice cream &amp; single espresso</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Vietnamese Iced Coffee</span><span class="mi-price">R35</span>
+          <span class="mi-name">Vietnamese Iced Coffee</span><span class="mi-price">R38</span>
           <p class="mi-desc">Double espresso, milk, ice &amp; condensed milk</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Mocha</span><span class="mi-price">R38</span>
+          <span class="mi-name">Mocha</span><span class="mi-price">R42</span>
           <p class="mi-desc">Single shot latte with chocolate ganache</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Hot Chocolate</span><span class="mi-price">R35</span>
+          <span class="mi-name">Hot Chocolate</span><span class="mi-price">R38</span>
           <p class="mi-desc">Steamed milk with chocolate ganache</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Red Cappuccino</span><span class="mi-price">R30</span>
+          <span class="mi-name">Chai Latte</span><span class="mi-price">R34</span>
+          <p class="mi-desc">Creamy tea latte infused with aromatic spices</p>
+        </div>
+        <div class="menu-item">
+          <span class="mi-name">Red Cappuccino</span><span class="mi-price">R34</span>
           <p class="mi-desc">Red espresso with steamed milk &amp; micro foam</p>
         </div>
         <div class="menu-item">
-          <span class="mi-name">Loose Leaf Tea</span><span class="mi-price">R25</span>
+          <span class="mi-name">Loose Leaf Tea</span><span class="mi-price">R30</span>
           <p class="mi-desc">Rooibos, black, herbal or fruit</p>
         </div>
-        <div class="menu-item"><span class="mi-name">Milkshakes</span><span class="mi-price">R38</span></div>
       </div>
 
     </div>
@@ -1961,109 +1892,6 @@
 
 
 <!-- ============================================================
-     5. EMAIL CAPTURE — BREVO (SENDINBLUE)
-============================================================ -->
-<section id="join" class="section-pad" aria-labelledby="join-h">
-  <div class="container">
-    <div class="join-inner">
-
-      <!-- Copy -->
-      <div class="fade-up">
-        <p class="eyebrow">Be First to Know</p>
-        <hr class="rule" />
-        <h2 class="h-serif" id="join-h">
-          Some things at The Upper Millstone don't wait around.
-        </h2>
-        <p class="body-lg" style="margin-top:14px;">
-          Music nights fill quietly. Seasonal specials run short. 
-          The almond croissants can be gone by 9am. 
-          Join the list and we reach you first — before we post publicly, 
-          before things are sold out.
-        </p>
-        <div class="join-perks">
-          <div class="join-perk">First notice of live music nights and sessions</div>
-          <div class="join-perk">Limited seasonal specials and coffee releases</div>
-          <div class="join-perk">Small local events and community happenings</div>
-          <div class="join-perk">Nothing you didn't ask for. No spam. Ever.</div>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <div class="fade-up d2">
-        <div class="form-card">
-
-          <!-- Form (visible state) -->
-          <div id="formWrap">
-            <h3 class="form-card-h">Get on the inside.</h3>
-            <p class="form-card-sub">One email when something is actually worth knowing about.</p>
-
-            <!--
-            ================================================================
-            BREVO (SENDINBLUE) INTEGRATION
-            ================================================================
-
-            OPTION A — Brevo Embedded Form (Recommended, no API key exposure):
-              1. Log in at brevo.com
-              2. Go to: Marketing Platform → Subscription Forms → Create a Form
-              3. Design your form (use "Custom HTML" for full control)
-              4. Publish and copy the <div class="sib-form"> embed code
-              5. Replace the <form id="mailForm"> element below with the embed
-              6. The JS below can be removed once Brevo's own script handles submit
-
-            OPTION B — Brevo API via a server-side proxy (production-grade):
-              POST to: https://api.brevo.com/v3/contacts
-              Run through a Netlify Function / Vercel Edge / Cloudflare Worker
-              so the API key is NEVER exposed in client-side code.
-              Proxy body: { email, attributes: { FIRSTNAME: firstName },
-                            listIds: [YOUR_LIST_ID], updateEnabled: true }
-
-            OPTION C — Brevo SMTP form action (quick, no code):
-              Change the <form> tag below to:
-              <form method="POST" action="https://sibforms.com/serve/[YOUR_FORM_ID]">
-              and remove the JS submit handler below.
-
-            CURRENT STATE: front-end validation + simulated success message.
-            Replace the await new Promise() line in the JS with your real API call.
-            ================================================================
-            -->
-
-            <form id="mailForm" novalidate>
-              <div class="form-group">
-                <label for="fName">First Name</label>
-                <input type="text" id="fName" name="FIRSTNAME"
-                       placeholder="Your first name"
-                       autocomplete="given-name" required />
-              </div>
-              <div class="form-group">
-                <label for="fEmail">Email Address</label>
-                <input type="email" id="fEmail" name="EMAIL"
-                       placeholder="your@email.com"
-                       autocomplete="email" required />
-              </div>
-              <button type="submit" class="btn btn-primary form-submit">
-                Get First Notice →
-              </button>
-            </form>
-
-            <p class="form-privacy">No spam. Unsubscribe any time. Your details are safe.</p>
-          </div>
-
-          <!-- Success message -->
-          <div id="formDone" class="form-success" role="status" aria-live="polite">
-            <div class="success-icon">✓</div>
-            <h3>You're on the list.</h3>
-            <p>We'll reach you when something is worth knowing about.<br/>See you in Hilton.</p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
      6. MUSIC & COMMUNITY
 ============================================================ -->
 <section id="music" class="section-pad" aria-labelledby="music-h">
@@ -2086,16 +1914,15 @@
         <div class="music-note">
           <p>
             <strong>Want first notice of live music sessions?</strong><br />
-            We don't advertise widely. Join the email list.
+            We don't advertise widely. Follow on Facebook.
             That's where the real announcements land first.
           </p>
         </div>
 
         <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="#join" class="btn btn-primary">Join the List</a>
-          <a href="https://www.instagram.com/theuppermillstone/"
+          <a href="https://www.facebook.com/Theuppermillstone"
              target="_blank" rel="noopener noreferrer"
-             class="btn btn-outline">Follow on Instagram</a>
+             class="btn btn-primary">Follow on Facebook</a>
         </div>
       </div>
 
@@ -2184,10 +2011,10 @@
               <a href="tel:+27333431344">033 343 1344</a>
             </div>
             <div class="info-row">
-              <span class="lbl">Instagram</span>
-              <a href="https://www.instagram.com/theuppermillstone/"
+              <span class="lbl">Facebook</span>
+              <a href="https://www.facebook.com/Theuppermillstone"
                  target="_blank" rel="noopener noreferrer"
-                 class="ig">@theuppermillstone</a>
+                 class="ig">The Upper Millstone</a>
             </div>
             <div class="info-row">
               <span class="lbl">Parking</span>
@@ -2303,7 +2130,7 @@
           <div class="faq-a" role="region">
             <div class="faq-a-inner">
               Call us on 033 343 1344 or find us at 36 Hilton Ave, Hilton.
-              Follow on Instagram @theuppermillstone for daily updates.
+              Follow on Facebook for daily updates.
             </div>
           </div>
         </div>
@@ -2318,9 +2145,9 @@
           </button>
           <div class="faq-a" role="region">
             <div class="faq-a-inner">
-              Occasional live music sessions happen at The Upper Millstone — blues and jazz are 
-              part of the DNA here. Sessions are intimate and not widely advertised. 
-              Join the email list to be first to know when one is happening.
+              Occasional live music sessions happen at The Upper Millstone — blues and jazz are
+              part of the DNA here. Sessions are intimate and not widely advertised.
+              Follow on Facebook to be first to know when one is happening.
             </div>
           </div>
         </div>
@@ -2372,9 +2199,9 @@
           </button>
           <div class="faq-a" role="region">
             <div class="faq-a-inner">
-              Join the email list — that's where first notice of live music nights, 
-              limited specials, and small local events goes before anything is posted publicly. 
-              Follow on Instagram for day-to-day updates.
+              Follow on Facebook — that's where first notice of live music nights,
+              limited specials, and small local events goes before anything is posted publicly,
+              plus day-to-day updates.
             </div>
           </div>
         </div>
@@ -2407,10 +2234,9 @@
 
       <div class="cta-buttons">
         <a href="#visit" class="btn btn-primary">Find Us in Hilton →</a>
-        <a href="#join"  class="btn btn-outline">Join the Inside List</a>
-        <a href="https://www.instagram.com/theuppermillstone/"
+        <a href="https://www.facebook.com/Theuppermillstone"
            target="_blank" rel="noopener noreferrer"
-           class="btn btn-teal">Follow on Instagram</a>
+           class="btn btn-teal">Follow on Facebook</a>
       </div>
 
       <!-- NAP — keep as crawlable text for local SEO -->
@@ -2442,6 +2268,12 @@
           Real coffee. Real bread. A little bit of soul.
           Serving the KZN Midlands since 2016.
         </p>
+        <a href="https://www.facebook.com/Theuppermillstone" target="_blank" rel="noopener noreferrer"
+           class="footer-social" aria-label="Follow The Upper Millstone on Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12.06C22 6.53 17.52 2.04 12 2.04S2 6.53 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/>
+          </svg>
+        </a>
       </div>
 
       <div>
@@ -2459,10 +2291,9 @@
       <div>
         <p class="f-col-title">Connect</p>
         <ul class="f-links">
-          <li><a href="https://www.instagram.com/theuppermillstone/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/Theuppermillstone" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           <li><a href="tel:+27333431344">033 343 1344</a></li>
           <li><a href="https://maps.app.goo.gl/UQiLcGHNSGYq3oJH9" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
-          <li><a href="#join">Join the Email List</a></li>
         </ul>
         <div style="margin-top:22px;">
           <p class="f-col-title">Location</p>
@@ -2547,68 +2378,6 @@
         btn.setAttribute('aria-expanded', 'true');
       }
     });
-  });
-
-  // ── Email form ───────────────────────────────────────────
-  const mailForm   = document.getElementById('mailForm');
-  const formWrap   = document.getElementById('formWrap');
-  const formDone   = document.getElementById('formDone');
-
-  mailForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const firstName = document.getElementById('fName').value.trim();
-    const email     = document.getElementById('fEmail').value.trim();
-    const emailRx   = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!firstName) { document.getElementById('fName').focus(); return; }
-    if (!email || !emailRx.test(email)) { document.getElementById('fEmail').focus(); return; }
-
-    const submitBtn = mailForm.querySelector('button[type="submit"]');
-    submitBtn.textContent = 'Adding you…';
-    submitBtn.disabled = true;
-
-    /*
-    ================================================================
-    REPLACE THE SIMULATED DELAY BELOW WITH YOUR REAL BREVO CALL.
-    ================================================================
-
-    OPTION A — Brevo API through a server-side proxy:
-    ─────────────────────────────────────────────────
-    try {
-      const res = await fetch('/api/subscribe', {   // ← Your proxy endpoint
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ firstName, email })
-      });
-      if (!res.ok) throw new Error();
-    } catch {
-      submitBtn.textContent = 'Try again';
-      submitBtn.disabled = false;
-      return;
-    }
-
-    Your proxy (Netlify Function / Vercel Edge / CF Worker) should call:
-      POST https://api.brevo.com/v3/contacts
-      Headers: { 'api-key': process.env.BREVO_API_KEY }
-      Body: {
-        email,
-        attributes: { FIRSTNAME: firstName },
-        listIds: [YOUR_LIST_ID],   // ← integer from Brevo
-        updateEnabled: true
-      }
-
-    OPTION B — Brevo SMTP form action (swap the <form> tag):
-    ─────────────────────────────────────────────────────────
-    <form method="POST" action="https://sibforms.com/serve/[YOUR_FORM_ID]">
-    ================================================================
-    */
-
-    // Simulated async — REMOVE this in production, replace with call above
-    await new Promise(r => setTimeout(r, 900));
-
-    formWrap.style.display = 'none';
-    formDone.classList.add('vis');
   });
 </script>
 
