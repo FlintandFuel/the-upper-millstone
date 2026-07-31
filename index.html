@@ -641,6 +641,8 @@
       margin-bottom: 6px;
     }
     .reason-body { font-size: 0.875rem; color: var(--text-2); line-height: 1.65; }
+    .inline-link { color: var(--orange); text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s; }
+    .inline-link:hover { color: var(--cream); }
 
     /* ================================================================
        HIGHLIGHT CARDS
@@ -866,22 +868,11 @@
       font-style: italic;
       font-size: 0.93rem;
       line-height: 1.7;
-      color: var(--text-2);
+      color: var(--cream);
       flex: 1;
       margin-bottom: 18px;
     }
     .r-author { display: flex; align-items: center; gap: 10px; }
-    .r-avatar {
-      width: 34px; height: 34px;
-      border-radius: 50%;
-      background: var(--bg-lifted);
-      border: 1px solid var(--border-2);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--warm);
-      flex-shrink: 0;
-    }
     .r-name { font-size: 0.78rem; font-weight: 600; color: var(--cream); }
     .r-label { font-size: 0.68rem; color: var(--text-2); }
 
@@ -1385,7 +1376,7 @@
             <h3 class="reason-title">The Coffee Is the Real Thing</h3>
             <p class="reason-body">
               Proper specialty coffee. Trained baristas, good beans, every morning.
-              The full menu is further down the page. Come in and work through it.
+              The full menu is <a href="#menu" class="inline-link">here</a>. Come in and work through it.
             </p>
           </div>
         </div>
@@ -1396,7 +1387,7 @@
             <h3 class="reason-title">The Bread Sells Out. That Tells You Everything.</h3>
             <p class="reason-body">
               True artisan sourdough, baked on-site every morning.
-              Get here early. On a good morning it's gone by mid-morning.
+              Get here early. On a good day it's gone by mid-morning.
               That's all you need to know.
             </p>
           </div>
@@ -1420,8 +1411,8 @@
             <p class="reason-body">
               Regulars have their orders known. Names get remembered.
               You'll bump into someone you know.
-              One customer put it as "where everybody knows your name"
-              and they weren't being poetic.
+              People say it's a place where "everybody knows your name"
+              and they aren't being poetic.
             </p>
           </div>
         </div>
@@ -1456,8 +1447,9 @@
         <h3 class="card-title">Specialty Espresso Bar</h3>
         <p class="card-body">
           Flat whites, cappuccinos, Americanos, alternative brews and a Vietnamese iced coffee
-          people come back for specifically. The full menu is in the section below.
+          people come back for specifically.
         </p>
+        <a href="#menu" class="btn btn-outline" style="margin-top:6px;padding:9px 18px;font-size:0.72rem;">Menu →</a>
         <span class="card-tag">Drink In · Take Away</span>
       </article>
 
@@ -1468,8 +1460,8 @@
         </div>
         <h3 class="card-title">Small-Batch Croissants &amp; Pastries</h3>
         <p class="card-body">
-          Flaky, buttery, baked that morning. Almond croissants people 
-          turn their car around on Hilton Avenue for. Pain au chocolat, 
+          Flaky, buttery, baked expertly. Early. Almond croissants people
+          turn their car around on Hilton Avenue for. Pain au chocolat,
           cheese croissants, custard Danish, cinnamon buns, and whatever 
           else came out of the oven first. Arrive before they're gone.
         </p>
@@ -1513,6 +1505,7 @@
         <p class="card-body">
           Facebrick walls, solid timber, a wall of guitars that sets the tone
           before you've ordered a thing. Blues plays in the morning. Come in and feel it.
+          It might get loud.
         </p>
         <span class="card-tag">Real Atmosphere · No Pretence</span>
       </article>
@@ -1743,7 +1736,7 @@
     <div class="fade-up">
       <p class="eyebrow">Take Some Home</p>
       <hr class="rule" />
-      <h2 class="h-serif" id="takeaway-h">Rusks, Biscotti &amp; Cookies — Baked Here, Boxed to Travel</h2>
+      <h2 class="h-serif" id="takeaway-h">Rusks, Biscotti &amp; Cookies. Baked Here, Boxed to Travel.</h2>
       <p class="body-lg" style="margin-top:14px;max-width:640px;">
         Buttermilk and walnut &amp; apricot rusks. Macadamia and dried pear, hazelnut and dark chocolate,
         almond and cranberry biscotti. Cookies that don't usually make it home in one piece.
@@ -1792,7 +1785,6 @@
           There are a number of coffee shops in Hilton — but you'll miss out if you don't visit this one."
         </p>
         <div class="r-author">
-          <div class="r-avatar" aria-hidden="true">JS</div>
           <div>
             <p class="r-name">Jaco S.</p>
             <p class="r-label">Local Guide · Google Review</p>
@@ -1808,7 +1800,6 @@
           Absolutely passionate about what they do."
         </p>
         <div class="r-author">
-          <div class="r-avatar" aria-hidden="true">CP</div>
           <div>
             <p class="r-name">Christy P.</p>
             <p class="r-label">Google Review</p>
@@ -1823,7 +1814,6 @@
           Lovely decor, staff, and baked goods. A great reason to stop after school drop-off."
         </p>
         <div class="r-author">
-          <div class="r-avatar" aria-hidden="true">VA</div>
           <div>
             <p class="r-name">Vaneshran A.</p>
             <p class="r-label">Local Guide · Google Review</p>
@@ -1839,7 +1829,6 @@
           Hilton Avenue just to buy."
         </p>
         <div class="r-author">
-          <div class="r-avatar" aria-hidden="true">PN</div>
           <div>
             <p class="r-name">Pamela N.</p>
             <p class="r-label">Local Guide · Google Review</p>
@@ -1855,7 +1844,6 @@
           Howard is always great to deal with."
         </p>
         <div class="r-author">
-          <div class="r-avatar" aria-hidden="true">HM</div>
           <div>
             <p class="r-name">Hannah M.</p>
             <p class="r-label">Local Guide · Google Review</p>
@@ -1871,7 +1859,6 @@
           Where everybody knows your name."
         </p>
         <div class="r-author">
-          <div class="r-avatar" aria-hidden="true">DY</div>
           <div>
             <p class="r-name">Des Y.</p>
             <p class="r-label">Local Guide · Google Review</p>
